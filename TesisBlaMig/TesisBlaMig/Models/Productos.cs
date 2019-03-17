@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TesisBlaMig.Models
 {
-    class Productos
+   public class Productos
     {
         public int ProductID { get; set; }
         public string Description { get; set; }

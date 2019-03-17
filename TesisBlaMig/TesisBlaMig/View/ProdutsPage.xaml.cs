@@ -2,12 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
-using TesisFarmcias.Models;
+using TesisBlaMig.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-//using System.
 
-namespace TesisFarmcias
+
+namespace TesisBlaMig
 {
     
 
@@ -16,10 +16,11 @@ namespace TesisFarmcias
     public partial class ProdutsPage : ContentPage
     {
        private List<Productos> productos;
-       
 
-        public ProdutsPage(DeviceUser deviceUser)
+
+        public ProdutsPage (DeviceUser deviceUser)
         {
+
             InitializeComponent();
             titlelabel.Text = String.Format("Bienvenido {0} {1}",
             deviceUser.FirstName, deviceUser.LastName);

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TesisBlaMig.Models
 {
-    class DeviceUser
+    public class  DeviceUser
     {
         public int UsuarioID { get; set; }
         public string NickNamre { get; set; }

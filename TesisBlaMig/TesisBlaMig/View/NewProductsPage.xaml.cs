@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace TesisFarmcias
+namespace TesisBlaMig
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NewProductsPage : ContentPage
