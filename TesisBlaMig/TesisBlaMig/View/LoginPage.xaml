@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TesisBlaMig"
+             x:Class="TesisBlaMig.MainPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10,30,10,10" Spacing="10">
+                <!-- titulo -->
+                <Label Text="Farmcias!" 
+               Font="30"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+                <!-- subtitulo -->
+                <Label Text="Ingreso al sistema!" 
+               Font="30"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+                <ActivityIndicator x:Name="waitActivityIndicator"
+          HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+                <Label Text="Usuario" 
+               Font="30"
+           HorizontalOptions="Start"
+           VerticalOptions="Center" />
+                <Entry x:Name="UserEntry"
+               Placeholder="Ingrese Usuario"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center"></Entry>
+
+                <Label Text="clave" 
+               Font="30"
+           HorizontalOptions="Start"
+           VerticalOptions="Center" />
+                <Entry x:Name="passwordEntry"
+               Placeholder="Ingrese la Clave"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center"></Entry>
+
+                <Label x:Name="enterNuevoUsuario"
+             Text="Crear Nuevo Usuario" 
+           Font="20"
+          TextColor="Navy"
+           HorizontalOptions="Center"
+           VerticalOptions="Center" />
+
+
+                <Label x:Name="enterButton2"
+             Text="Recuparar Usurio" 
+           Font="20"
+          TextColor="Navy"
+           HorizontalOptions="Center"
+           VerticalOptions="Center" />
+
+                <Button x:Name="enterButton"
+         Text="Ingresar"
+         BackgroundColor="Azure"
+         HorizontalOptions="FillAndExpand"
+         VerticalOptions="Center"></Button>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>
