@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                x:Class="TesisBlaMig.NewUserPage">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10,30,10,10" Spacing="10">
+
+                <!-- titulo -->
+                <Label Text="Registrar Usuario" 
+        Font="30"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand" />
+
+                <!-- subtitulo -->
+       <Label Text="Ingrese los datos para afiliarte!" 
+        Font="30"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand" />
+        <ActivityIndicator x:Name="waitActivityIndicator"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand" />
+
+
+       <Label Text="Nombre:" 
+        Font="30"
+        HorizontalOptions="Start"
+        VerticalOptions="Center" />
+       <Entry x:Name="UserEntry"
+        Placeholder="Ingrese Nombre"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="Center"></Entry>
+
+      <Label Text="Apellido:" 
+       Font="30"
+       HorizontalOptions="Start"
+       VerticalOptions="Center" />
+      <Entry x:Name="ApellidoEntry"
+      Placeholder="Ingrese Apellido"
+      HorizontalOptions="FillAndExpand"
+      VerticalOptions="Center"></Entry>
+
+     <Label Text="Fecha Nacimiento:" 
+     Font="30"
+     HorizontalOptions="Start"
+     VerticalOptions="Center" />
+     <Entry x:Name="FechaNacimientoEntry"
+     Placeholder="Ingrese la Facha de Nacimeinto"
+     HorizontalOptions="FillAndExpand"
+     VerticalOptions="Center"></Entry>
+
+     <Label Text="Usuario" 
+     Font="30"
+     HorizontalOptions="Start"
+     VerticalOptions="Center" />
+     <Entry x:Name="User2Entry"
+     Placeholder="Ingrese Usuario"
+     HorizontalOptions="FillAndExpand"
+     VerticalOptions="Center"></Entry>
+
+    <Label Text="clave" 
+     Font="30"
+     HorizontalOptions="Start"
+     VerticalOptions="Center" />
+     <Entry x:Name="passwordEntry"
+     Placeholder="Ingrese la Clave"
+     HorizontalOptions="FillAndExpand"
+     VerticalOptions="Center"></Entry>
+
+    
+    <Button x:Name="enterButton"
+     Text="Ingresar"
+     BackgroundColor="Azure"
+     HorizontalOptions="FillAndExpand"
+     VerticalOptions="Center"></Button>
+        
+      </StackLayout>
+         
+          </ScrollView>
+    
+       </ContentPage.Content>      
+
+
+
+</ContentPage>

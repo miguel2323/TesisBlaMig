@@ -1,13 +1,14 @@
 ﻿
 
-namespace TesisFarmcias
+namespace TesisBlaMig
 {
     using System;
-    using TesisFarmcias.Models;
+    using TesisBlaMig.Models;
     using System.Net.Http;
-   using TesisFarmcias.View;
+    using TesisBlaMig.View;
     using Xamarin.Forms;
     using Newtonsoft.Json;
+    
 
     public partial class MainPage : ContentPage
     { 
@@ -38,13 +39,7 @@ namespace TesisFarmcias
             };
               enterNuevoUsuario.GestureRecognizers.Add(tapNuevoUsuario);
         }
-
-
-        
-
-     
-
-private async void EnterButton_Clicked(object sender, EventArgs e)
+          private async void EnterButton_Clicked(object sender, EventArgs e)
         {
             //validndo el usurio
             if (string.IsNullOrEmpty(UserEntry.Text))

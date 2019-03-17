@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TesisBlaMig.ProdutsPage">
+    
+    <ContentPage.Content>
+       <StackLayout Padding="10,30,10,10" Spacing="10">
+    <!-- titulo -->
+    <Label x:Name="titlelabel" 
+    Font="30"
+    HorizontalOptions="Center"
+    VerticalOptions="CenterAndExpand" />
+   
+     <Label Text="Productos" 
+    Font="30"
+    HorizontalOptions="Center"
+    VerticalOptions="CenterAndExpand" />
+    <ActivityIndicator x:Name="waitActivityIndicator"
+    HorizontalOptions="Center"
+    VerticalOptions="CenterAndExpand" />
+
+    <!--Creandole los botones a la interfaz productos-->
+     <StackLayout Orientation="Horizontal">
+       <Button x:Name="newButton"
+        Text="Nuevo"
+        BackgroundColor="Navy"
+        TextColor="White"   
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="Center"/>
+          
+         <Button x:Name="finButton"
+        Text="Buscar"
+        BackgroundColor="Yellow"
+        TextColor="Black"       
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="Center"/>
+         
+            </StackLayout>
+        <!--Lista de productos-->
+            <ListView x:Name="productsLisView"
+        HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
